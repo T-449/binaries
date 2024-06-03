@@ -20,7 +20,7 @@ for file in *.out; do
         # Run perf stat and append the output to the single output file
         echo "Run $i:" >> "$output_file"
         # perf stat -e cycles -a -A ./$file >> "$output_file" 2>&1
-        sudo ./memory_usage.sh $file  >> "$output_file" 2>&1
+        ./memory_usage.sh $file  >> "$output_file" 2>&1
     done
 done
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd KEM_test/
+cd KEM/
 ./run.sh
-cd ../SIG_test
+cd ../SIG
 ./run_mem.sh
