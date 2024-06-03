@@ -7,7 +7,7 @@ output_directory="perf_outputs"
 mkdir -p $output_directory
 
 # Loop through all .out files in the current directory
-for file in ../KEM/*.out; do
+for file in *.out; do
     # Define an output file within the output directory for the aggregated results of this .out file
     output_file="${output_directory}/${file}_perf_output.txt"
     
