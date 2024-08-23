@@ -1,0 +1,50 @@
+1. Install wsl version 2 and Ubuntu 22.04.3
+	a. Start powershell as administrator
+	b. Run wsl --install
+	c. For me hyperthreading was already enabled but if not you might have to enable that from the BIOS
+	d. Check if WSL is version 2 with "wsl -l -v"
+	e. If it's not 2 then run "wsl --set-default-version <Version#>", replace <Version#> with 2
+	d. Install and run Ubuntu 22.04.3 from the Microsoft Store
+
+2. How to install perf in WSL:
+	a. sudo apt install build-essential linux-tools-generic
+	b. Try running /usr/lib/linux-tools/<linux-version>-generic/perf
+	c. For the linux version do an "ls /usr/lib/linux-tools/"
+	d. If this is the first time it should tell you to edit sysctl.conf file to run perf
+
+3. Add "kernel.perf_event_paranoid = -1" (without the ") at the end of /etc/sysctl.conf file. You need sudo to edit the file.
+
+4. Restart computer and perf should now work. Restarting just Ubuntu didn't work for me. Idk why.
+
+5. Running "/usr/lib/linux-tools/<linux-version>-generic/perf stat -e cycles -a -A ls" should give something like this:
+
+	Performance counter stats for 'system wide':
+
+	CPU0               83,312      cycles                                                                
+	CPU1              100,896      cycles                                                                
+	CPU2              154,771      cycles                                                                
+	CPU3              216,813      cycles                                                                
+	CPU4              128,669      cycles                                                                
+	CPU5              532,076      cycles                                                                
+	CPU6               87,694      cycles                                                                
+	CPU7              273,495      cycles                                                                
+	CPU8              895,338      cycles                                                                
+	CPU9              236,859      cycles                                                                
+	CPU10           3,584,058      cycles                                                                
+	CPU11             223,990      cycles                                                                
+
+	       0.001288419 seconds time elapsed
+	       
+6. Run "git clone https://github.com/T-449/binaries.git" and "cd binaries/"
+	     
+6. Replace the perf commands in line 21 of run.sh files in KEM and SIG directories with "/usr/lib/linux-tools/<linux-version>-generic/perf"
+	       
+7. Run "run.sh" from the binaries directory
+
+8. Once it completes there should be 2 directories "perf_outputs" and "mem_outputs" in the KEM and SIG directories
+
+P.S: Files inside WSL can be accessed from Windows 
+
+9. Please make a zip file with those 4 directories including a txt with system specs and mail it to oddjobs473@gmail.com
+
+10. Thanks for the effort :)
