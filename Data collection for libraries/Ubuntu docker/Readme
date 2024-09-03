@@ -1,0 +1,6 @@
+1. Run ./docker_start.sh
+2. The ./run.sh command will take time so please wait for it to finish
+3. Use "docker cp container_id:/home/liboqs/binaries/perf_outputs ./host-data-directory" to copy 
+	 the perf_outputs directory to any place in your local machine
+4. Exit the docker terminal and run ./clean_docker.sh to remove the image and container
+

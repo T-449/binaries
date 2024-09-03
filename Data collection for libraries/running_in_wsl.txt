@@ -44,7 +44,3 @@
 8. Once it completes there should be 2 directories "perf_outputs" and "mem_outputs" in the KEM and SIG directories
 
 P.S: Files inside WSL can be accessed from Windows 
-
-9. Please make a zip file with those 4 directories including a txt with system specs and mail it to oddjobs473@gmail.com
-
-10. Thanks for the effort :)

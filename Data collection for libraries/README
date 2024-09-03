@@ -1,0 +1,14 @@
+Genrating CSV:
+  1. If you already have an Ubuntu device and want to run the data collection files in the same device, please clone the repository and run "./run.sh" to generate data for Dataset 1.
+  2. If you have a Windows device see "running_in_wsl.txt".
+  3. If you have an Ubuntu device but want to run it in docker go to the Ubuntu docker directory and please read the Readme.
+  4. The data will be generated in perf_output and mem_output directories within the KEM and SIG directory.
+  5. To generate data for Dataset 2, please run "python3 load.py" before running "./run.sh". If u have run data collection for Dataset 1 please remove the perf perf_output and mem_output directories first otherwise
+     they will be overwritten.
+
+Running ML models:
+
+  1. Now run "python_scripts/parse_cycle_files.py", "python_scripts/parse_mem_files.py" on perf_output and mem_output directories respectively to genrate csv-s for the corresponding files. You have to input the directory location within the file.
+  2. Now based on the csv-s the experiments can be run using the other python files within the same directory. For example to generate results for classical vs pq key exchange classification run "python_scripts/classical_pq_classification(cycle + mem).py" file by adding the accurate directories within the file. 
+
+P.S: the python files have a lot of dependencies. it is suggested to run within a venv.
