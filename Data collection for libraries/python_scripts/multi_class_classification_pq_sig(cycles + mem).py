@@ -30,11 +30,11 @@ def merge_cycle_mem(file_list_1, file_list_2):
     return merged_algo_df
 
 
-#input_dir_cycles = '/home/heresy/Downloads/MLClassification/csv/SIG_perf/'
-#input_dir_mem = '/home/heresy/Downloads/MLClassification/csv/SIG_mem'
+#input_dir_cycles = ''
+#input_dir_mem = ''
 
-input_dir_cycles = '/home/heresy/Downloads/CSV/SIG_perf/'
-input_dir_mem = '/home/heresy/Downloads/CSV/SIG_mem'
+input_dir_cycles = ''
+input_dir_mem = ''
 
 dilithium_file_path_cycles = [file for file in os.listdir(input_dir_cycles) if
                               file.startswith('Dilithium')]

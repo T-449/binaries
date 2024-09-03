@@ -87,7 +87,7 @@ def simple_hash(elements):
 
 
 # Read the pcap file
-capture = pyshark.FileCapture('/home/heresy/Downloads/private.pcapng')
+capture = pyshark.FileCapture('')
 
 ecdh_reply_packets = []
 alt = 0

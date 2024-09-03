@@ -45,7 +45,7 @@ classical_algorithms = {
 }
 
 # Specify the path to the capture file
-capture_file = '/home/heresy/Pcaps/TLS/qtls.pcapng'
+capture_file = ''
 
 ip_address = "10.110.218.173"
 

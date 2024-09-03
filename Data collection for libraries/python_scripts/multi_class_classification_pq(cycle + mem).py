@@ -30,10 +30,10 @@ def read_csv_files(file_paths):
         df_dict[algo_name] = pd.read_csv(file_path)
     return df_dict
 
-input_directory = '/home/heresy/Downloads/MLClassification/csv/KEM_perf'
-input_directory_mem = '/home/heresy/Downloads/MLClassification/csv/KEM_mem'
-#input_directory = '/home/heresy/Downloads/CSV/KEM_perf'
-#input_directory_mem = '/home/heresy/Downloads/CSV/KEM_mem'
+input_directory = ''
+input_directory_mem = ''
+#input_directory = ''
+#input_directory_mem = ''
 kyber_file_paths = [os.path.join(input_directory, file) for file in os.listdir(input_directory) if
                     file.startswith('kyber')]
 frodo_file_paths = [os.path.join(input_directory, file) for file in os.listdir(input_directory) if

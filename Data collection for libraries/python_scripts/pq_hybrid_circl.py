@@ -34,19 +34,19 @@ def merge_cycle_mem(file_list_1, file_list_2, hybrid = 0):
     return merged_algo_df
 
 
-input_dir_cycles = '/home/heresy/Downloads/MLClassification/pq vs hybrid_circl/clean/pq_perf'
-input_dir_mem = '/home/heresy/Downloads/MLClassification/pq vs hybrid_circl/clean/pq_mem'
-input_dir_cycles_hybrid = '/home/heresy/Downloads/MLClassification/pq vs hybrid_circl/clean/hybrid_perf'
-input_dir_mem_hybrid = '/home/heresy/Downloads/MLClassification/pq vs hybrid_circl/clean/hybrid_mem'
+input_dir_cycles = '/Downloads/MLClassification/pq vs hybrid_circl/clean/pq_perf'
+input_dir_mem = 'Downloads/MLClassification/pq vs hybrid_circl/clean/pq_mem'
+input_dir_cycles_hybrid = 'Downloads/MLClassification/pq vs hybrid_circl/clean/hybrid_perf'
+input_dir_mem_hybrid = '/Downloads/MLClassification/pq vs hybrid_circl/clean/hybrid_mem'
 
 
 
 
 '''
-input_dir_cycles = '/home/heresy/Downloads/MLClassification/pq vs hybrid_circl/noisy/pq_perf'
-input_dir_mem = '/home/heresy/Downloads/MLClassification/pq vs hybrid_circl/noisy/pq_mem'
-input_dir_cycles_hybrid = '/home/heresy/Downloads/MLClassification/pq vs hybrid_circl/noisy/hybrid_perf'
-input_dir_mem_hybrid = '/home/heresy/Downloads/MLClassification/pq vs hybrid_circl/noisy/hybrid_mem'
+input_dir_cycles = '/Downloads/MLClassification/pq vs hybrid_circl/noisy/pq_perf'
+input_dir_mem = '/Downloads/MLClassification/pq vs hybrid_circl/noisy/pq_mem'
+input_dir_cycles_hybrid = '/Downloads/MLClassification/pq vs hybrid_circl/noisy/hybrid_perf'
+input_dir_mem_hybrid = '/Downloads/MLClassification/pq vs hybrid_circl/noisy/hybrid_mem'
 '''
 
 

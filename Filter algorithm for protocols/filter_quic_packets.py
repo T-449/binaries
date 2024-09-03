@@ -54,7 +54,7 @@ def simple_hash(elements):
 if __name__ == "__main__":
 
     # Path to the PCAP file
-    pcap_file = '/home/heresy/Downloads/chrome-cloudflare-quic-with-secrets.pcapng'
+    pcap_file = ''
     #pcap_file = '/home/heresy/Downloads/quic.pcap'
 
     # Open the PCAP file

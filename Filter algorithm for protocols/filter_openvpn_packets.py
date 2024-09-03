@@ -53,8 +53,7 @@ def simple_hash(elements):
 
 
 if __name__ == "__main__":
-    pcap_file = '/home/heresy/Downloads/samA.pcapng'
-    #pcap_file = '/home/heresy/Downloads/quic.pcap'
+    pcap_file = ''
 
     # Open the PCAP file
 
