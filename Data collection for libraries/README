@@ -3,7 +3,7 @@ Genrating CSV:
   2. If you have a Windows device see "running_in_wsl.txt".
   3. If you have an Ubuntu device but want to run it in docker go to the Ubuntu docker directory and please read the Readme.
   4. The data will be generated in perf_output and mem_output directories within the KEM and SIG directory.
-  5. To generate data for Dataset 2, please run "python3 load.py" before running "./run.sh". If u have run data collection for Dataset 1 please remove the perf perf_output and mem_output directories first otherwise
+  5. To generate data for Dataset 2, please run "python3 load.py" before running "./run.sh". If u have run data collection for Dataset 1 please remove the perf_output and mem_output directories first. Otherwise
      they will be overwritten.
 
 Running ML models:
